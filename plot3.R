@@ -1,3 +1,13 @@
+# Exploratory Data Analysis / Project 1 / Plot 3
+
+# download data file
+url <- "http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+if (! file.exists("household_power_consumption.zip")) {
+    download.file(url, destfile="./household_power_consumption.zip")
+}
+
+# uncompress data file
+unzip("household_power_consumption.zip")
 
 # read in just the rows we need
 data <- read.table(file="household_power_consumption.txt",
